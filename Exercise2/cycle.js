@@ -1,30 +1,24 @@
-var picarray=[];
-var i=0;
-function cycleforward() {
-var pic1 = document.getElementById('1');
-var pic2 = document.getElementById('2');
-var pic3 = document.getElementById('3');
-var pic4 = document.getElementById('4');
-var pic5 = document.getElementById('5');
-var pic6 = document.getElementById('6');
+var index=1;
+cycleforward(index);
 
-picarray.push(pic1);
-picarray.push(pic2);
-picarray.push(pic3);
-picarray.push(pic4);
-picarray.push(pic5);
-picarray.push(pic6);
-console.log(picarray);
-
-i=i+1;
-picarray[i-1].style.display="block";
+function indexfinder(x)
+{
+  cycleforward(index+=x);
 }
+function cycleforward(n) {
+var picarray=document.getElementsByClassName("slides");
 
-function cyclebackward(start) {
-
-
-
-
-
-
-
+if(n>picarray.length)
+{
+  index=1;
+}
+if(n<1)
+{
+  index=picarray.length;
+}
+for(var i=0;i<picarray.length;i++)
+{
+  picarray[i].style.display="none";
+}
+picarray[index-1].style.display="inline";
+}

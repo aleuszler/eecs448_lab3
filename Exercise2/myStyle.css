@@ -1,12 +1,13 @@
-p
-{
-background-color: blue;
-}
 
 .container{
 text-align:center;
+position: relative;
 }
 
-img{
-display:none;
+.slides {
+  display:none;
+}
+
+#pic1{
+  display:inline;
 }
