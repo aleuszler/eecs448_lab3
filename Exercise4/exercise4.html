@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+  <div id="container">
+  <p id="intro">This is a customizable page. Please insert a color value into the text field. Make this page into your own. <br> Please insert red, green, blue, or a width for the border. Please insert red, green, or blue for the background color.</p>
+  <h4>Border Style</h4>
+  <label for="thickness">Please insert a border thickness</label>
+  <input type="number" id="thickness" name="thickness">
+  <br>
+  <label for="bredinput">Please insert a red value between (0-255)</label>
+  <input type="number" id="bredinput" name="bredinput" min=0 max=255>
+  <br>
+  <label for="bgreeninput">Please insert a green value between (0-255)</label>
+  <input type="number" id="bgreeninput" name="bgreeninput" min=0 max=255>
+  <br>
+  <label for="bblueinput">Please insert a blue value between (0-255)</label>
+  <input type="number" id="bblueinput" name="bblueinput" min=0 max=255>
+  <br>
+  <h4>Background Color</h4>
+  <label for="redinput">Please insert a red value between (0-255)</label>
+  <input type="number" id="redinput" name="redinput" min=0 max=255>
+  <br>
+  <label for="greeninput">Please insert a green value between (0-255)</label>
+  <input type="number" id="greeninput" name="greeninput" min=0 max=255>
+  <br>
+  <label for="blueinput">Please insert a blue value between (0-255)</label>
+  <input type="number" id="blueinput" name="blueinput" min=0 max=255>
+  <br>
+  <button id="change" type="button" onclick="changecolors()">Change Colors</button>
+
+</div>
+</body>
+</html>
