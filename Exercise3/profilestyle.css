@@ -1,0 +1,52 @@
+body
+{
+  background-color: green;
+  background-image:url('greenpolkadots.jpg');
+  background-attachment:fixed;
+}
+p{
+  color:black;
+}
+p.intro
+{
+  font-family: fantasy;
+  font-size: 20pt;
+}
+p.hobbies
+{
+  font-family: monospace;
+  font-size: 20pt;
+}
+p.funfact
+{
+  font-family: cursive;
+  font-size: 20pt;
+}
+.container
+{
+  text-align:center;
+}
+
+#pic1
+{
+  border-style:dotted;
+}
+
+a
+{
+  font-size: 15pt;
+}
+
+iframe {
+  display:none;
+}
+
+#showvid {
+  background-color:white;
+  padding: 20px 20px;
+}
+
+#showvid:hover {
+  background-color:green;
+  color:white;
+}
